@@ -1,0 +1,106 @@
+.header-main-container{
+    background-color: #ffffff;
+    min-width: 100vh;
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.header-middle-container{
+  display: flex;
+    margin-left: -60px;
+}
+.header-paragraph{
+    font-family: 'Roboto';
+    font-size: 25px;
+    font-weight: 400;
+    color: #000000;
+    margin-top: 15px;
+}
+.header-home-styling{
+    font-family: 'Source Sans Pro';
+    font-size: 18px;
+    color:#000000;
+    margin-right: 30px;
+    cursor: pointer;
+    text-decoration: none;
+}
+.header-home-active-styling{
+    color: #18AB00;
+    text-decoration: underline;
+    text-decoration-color:#18AB00;
+    text-underline-offset: 6px;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+}
+.header-profile-container{
+    display: flex;
+    flex-direction: row;
+    margin-left: -40px;
+}
+.header-profile-styling{
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+    margin: 5px;
+    text-decoration: none;
+}
+.header-profile-name-styling{
+    font-family: 'Roboto';
+    font-size: 16px;
+    color: #000000;
+    margin: 15px 10px 0px 5px;
+}
+.header-logout-icon-styling{
+    font-size: 40px;
+    color: #18AB00;
+    font-weight: 400;
+    margin-top: 5px;
+    cursor: pointer;
+    margin-left: 5px;
+}
+.header-profile{
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+}
+.smaller-header-profile{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-decoration: none;
+    margin-left: -50px;
+}
+.smaller-logout-button-styling{
+    height: 40px;
+    width: 120px;
+    background-color: #18AB00;
+    border-radius: 12px;
+    border-width: 0px;
+    color:#ffffff;
+    font-size: 12px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+}
+.smaller{
+    margin-bottom:10px;
+}
+.header-space{
+    margin-right: 15px;
+}
+.smaller-heading{
+    margin-left: 15px;
+}
+@media(max-width:768px){
+    .header-main-container{
+        display: none;
+    }
+}
+@media(min-width:768px){
+    .header-small-device{
+        display: none;
+    }
+}

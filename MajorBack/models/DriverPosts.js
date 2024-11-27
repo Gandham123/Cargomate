@@ -1,0 +1,41 @@
+const mongoose=require('mongoose');
+const driverPostsSchema=new mongoose.Schema({
+    driver_name:{
+        type:String,
+        required:true
+    },
+    truck_type:{
+        type:String,
+        required:true
+    },
+    email_id:{
+        type:String,
+        required:true
+    },
+    mobile_number:{
+        type:String,
+        required:true
+    },
+    from_address:{
+        type:String,
+        required:true
+    },
+    to_address:{
+        type:String,
+        required:true
+    },
+    message:{
+        type:String,
+        required:true
+    },
+    truck_image:{
+        type:String,
+        required:true
+    },
+    driver_image:{
+        type:String,
+        required:true
+    }
+},{timestamps:true})
+const driverPosts=mongoose.model('driverPosts',driverPostsSchema);
+module.exports=driverPosts

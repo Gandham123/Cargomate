@@ -1,0 +1,16 @@
+
+.sub-header-home-styling{
+    font-family: 'Source Sans Pro';
+    font-size: 18px;
+    color:#ffffff;
+    margin-right: 30px;
+    cursor: pointer;
+    text-decoration: none;
+}
+.sub-header-active-styling{
+    color: #18AB00;
+    text-decoration: underline;
+    text-decoration-color:#18AB00;
+    text-underline-offset: 6px;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+}

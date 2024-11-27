@@ -1,0 +1,54 @@
+.driver-requests-each-status-container{
+    background-color: #F1F1F1;
+    border-radius: 21px;
+    width: 100%;
+    padding: 16px 30px 16px 30px; 
+    margin-bottom: 20px;
+}
+.driver-requests-load-details{
+    font-family: 'Inter';
+    font-size: 25px;
+    font-weight: 400;
+    color: #FF0000;
+}
+.driver-request-details-content{
+    font-family: 'Inter';
+    font-weight: 400;
+    color: #000000;
+    font-size: 18px;
+    margin-top: -4px;
+}
+.driver-requests-price-container{
+    height: 100px;
+    width: 160px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-top: -30px;
+}
+.driver-request-price{
+    font-family: 'Inter';
+    font-size: 18px;
+    font-weight: 400;
+    color: #000000;
+    margin-bottom: 0px;
+    margin-top: 5px;
+}
+.driver-requests-button-container{
+    height: 40px;
+    width: 120px;
+    background-color: #18AB00;
+    border-width: 0px;
+    border-radius: 20px;
+    font-family: 'Inter';
+    font-size: 16px;
+    font-weight: 400;
+    color: #ffffff;
+    cursor: pointer;
+}
+.accepted-button-color-change{
+    background-color: #15008C;
+}

@@ -1,0 +1,191 @@
+.profile-card {
+    width: 400px;
+    background-color: #CEC5C5;
+    border-radius: 15px;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 20px;
+}
+.header {
+    display: flex;
+    align-items: center;
+}
+
+.profile-pic {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.name-info {
+    margin-left: 15px;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+
+}
+
+.name-info h2 {
+    font-size:23px;
+    color: #000000;
+    font-family: 'Lato';
+    font-weight: 400;
+}
+
+.profile-link {
+    margin-left: 10px;
+    color: #6b5b95;
+    font-size: 12px;
+    margin-top: 8px;
+    cursor: pointer;
+    padding-top: 3px;
+}
+
+.driver-posts-middle-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.driver-posts-from-to-container{
+    background-color: #ffffff;
+    border-radius: 14px;
+    padding: 10px 20px 10px 20px;
+    box-shadow: 4px 4px 16px #959494;
+}
+.driver-post-from-container{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+}
+.driver-posts-truck{
+    font-family: 'Lato';
+    font-size: 14px;
+    color: #000000;
+    font-weight: 400;
+    margin-bottom: 0px;
+}
+.driver-post-from-name{
+    font-family: 'Lato';
+    font-size: 18px;
+    color:#310080;
+    font-weight: 400;
+    margin-right: 8px;
+    margin-top: 3px;
+}
+.driver-posts-truck-info{
+    background-color: #ffffff;
+    width: 100%;
+    border-radius: 17px;
+    padding: 20px 20px 4px 20px;
+}
+.driver-posts-truck-type{
+    font-family: 'Lato';
+    font-size: 16px;
+    font-weight: 400;
+    color: #000000;
+}
+.driver-posts-line-styling{
+    border: 1px solid #9a9797;
+    margin-top: -10px;
+
+}
+.driver-posts-message{
+    font-family: 'Lato';
+    font-size: 14px;
+    color: #252525;
+    font-weight: 400;
+    margin-top:-8px;
+}
+.truck-container{
+    margin-top: 20px;
+}
+.driver-posts-truck-pic-styling{
+    width: 80px;
+    height: 80px;
+}
+.driver-posts-from-address{
+    height: 37px;
+    min-width: 140px;
+    border-radius: 16px;
+    padding: 5px 20px 5px 20px;
+    border: 1px solid #686666;
+    color: #007904;
+    font-family: 'Lato';
+    font-size: 16px;
+    font-weight: 400;  
+}
+.action-buttons {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 15px;
+}
+
+.message-btn, .call-btn {
+    width: 120px;
+    height: 40px;
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    position: relative;
+    font-size: 1.2rem;
+}
+
+.message-btn .dropdown {
+    display: none;
+    position: absolute;
+    bottom:-110px;
+    left: 0;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 5px;
+    font-size: 0.9rem;
+}
+
+.message-btn:hover .dropdown {
+    display: block;
+}
+.call-container {
+    position: relative;
+    display: inline-block;
+}
+.call-dropdown {
+    background-color: #ffffff;
+    text-align: center;
+    padding: 5px;
+    width: 120px;
+    height: 60px;
+    border-radius: 8px;
+    display: none; /* Hidden by default */
+    position: absolute;
+    top: 45px; /* Adjusts position below the button */
+    left: 0;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Optional shadow */
+}
+.call-container:hover .call-dropdown {
+    display: block;
+}
+
+.dropdown span {
+    display: block;
+    padding: 5px 10px;
+    cursor: pointer;
+    color: black;
+}
+
+.dropdown span:hover {
+    background-color: #f1f1f1;
+}
+.driver-posts-time{
+    font-family: 'Lato';
+    font-size: 14px;
+    font-weight:400;
+    color: rgb(139, 139, 139);
+    text-align: left;
+    margin-top: 4px;
+}

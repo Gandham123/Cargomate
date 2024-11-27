@@ -1,0 +1,24 @@
+.profile-each-review-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #DDDCDC;
+    padding: 30px 20px 20px 40px;
+    border-radius: 33px;
+    margin: 20px;
+}
+.profile-review-owner{
+    font-family: 'Lato';
+    font-size: 30px;
+    color: #0012B1;
+    margin-bottom: 20px;
+}
+.review-owner-name{
+    color: #000000;
+}
+.review-message-styling{
+    font-family: 'Moon Dance';
+    font-style: italic;
+    font-weight: 100;
+    color: #000000;
+}

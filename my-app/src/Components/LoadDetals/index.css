@@ -1,0 +1,54 @@
+
+.load-details-contaner{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #ffffff;
+    height: 140px;
+    padding: 30px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+.loads-owner-name{
+    font-size: 21px;
+    font-family: 'Lato';
+    font-weight: 400;
+    color: #0019FF;
+    margin-bottom: 10px;
+}
+.loads-name{
+    font-size: 21px;
+    font-family: 'Lato';
+    font-weight: 400;
+    color: #000000;
+}
+.loads-from-contaner{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.loads-location-from-icon{
+    width: 11px;
+    height: 18px;
+    color: #0038FF;
+    margin-left: 6px;
+    margin-top: 5px;
+}
+.loads-view-details-box{
+    width: 140px;
+    height: 60px;
+    background-color: #FF000F;
+    border-width: 0px;
+    color: #ffffff;
+    font-family: 'Lato';
+    font-size: 12px;
+    font-weight: 400;
+    margin-top: 4px;
+    margin-right: 20px;
+    border-radius: 12px;
+}
+@media(max-width:1250px){
+    .loads-show-contaner{
+        width: auto;
+    }
+}

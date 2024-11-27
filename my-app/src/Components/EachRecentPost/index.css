@@ -1,0 +1,27 @@
+.profile-each-reacent-posts{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #ffffff;
+    margin-bottom: 20px;
+    height: 90px;
+    border-radius: 12px;
+    padding: 20px;
+    align-items: center;
+}
+.from-address-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+.profile-recent-from-address-style{
+    font-family: 'Lato';
+    font-size: 25px;
+    font-weight: 400;
+    color: #000000;
+}
+.profile-short-line-styling{
+    border:1px solid #000000;
+    width: 100px;
+    margin-left: 40px;
+}

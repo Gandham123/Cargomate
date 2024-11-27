@@ -1,0 +1,85 @@
+.Owner-requests-each-status-container{
+    background-color: #F1F1F1;
+    border-radius: 21px;
+    width: 100%;
+    padding: 16px 30px 16px 30px; 
+    margin-bottom: 20px;
+}
+.Owner-requests-load-details{
+    font-family: 'Inter';
+    font-size: 25px;
+    font-weight: 400;
+    color: #FF0000;
+}
+.Owner-request-details-content{
+    font-family: 'Inter';
+    font-weight: 400;
+    color: #000000;
+    font-size: 18px;
+    margin-top: -4px;
+}
+.Owner-requests-price-container{
+    height: 100px;
+    width: 160px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-top: -30px;
+}
+.Owner-request-price{
+    font-family: 'Inter';
+    font-size: 18px;
+    font-weight: 400;
+    color: #000000;
+    margin-bottom: 0px;
+    margin-top: 5px;
+}
+.Owner-requests-button-container{
+    height: 40px;
+    width: 120px;
+    background-color: #18AB00;
+    border-width: 0px;
+    border-radius: 14px;
+    font-family: 'Inter';
+    font-size: 16px;
+    font-weight: 400;
+    color: #ffffff;
+    cursor: pointer;
+}
+.tick-icon-styling-review{
+    height: 40px;
+    width: 40px;
+}
+.review-card-complete-load{
+    font-family: 'Inter';
+    font-size: 24px;
+    color: #000000;
+    font-weight: 400;
+    margin-top: 4px;
+}
+.review-card-line{
+    border: 1px solid rgb(147, 146, 146);
+    width: 45%;
+    margin-top: -14px;
+}
+.review-card-message-container{
+    height: 133px;
+    width: 100%;
+    background-color: #D8D8D8;
+    border-radius: 20px;
+    outline: none;
+    padding: 20px 30px 20px 30px;
+    border-width: 0px;
+}
+.custom-alert {
+    position: fixed;          /* Position it fixed to stay in place */
+    top: 20%;                 /* Adjust the vertical position as needed */
+    left: 50%;                /* Center horizontally */
+    transform: translateX(-50%);
+    width: auto;              /* Set width based on content */
+    z-index: 1000;            /* Ensure it appears above other components */
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2); /* Optional shadow for focus */
+  }

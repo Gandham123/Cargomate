@@ -1,0 +1,59 @@
+const  mongoose  = require("mongoose");
+
+const drverRequests= new mongoose.Schema({
+    postedBy:{
+        required:true,
+        type:String
+    },
+    driverName:{
+        required:true,
+        type:String,
+    },
+    driverMobile:{
+        required:true,
+        type:String
+    },
+    driverEmailId:{
+        required:true,
+        type:String
+    },
+    truckNumber:{
+        required:true,
+        type:String
+    },
+    price:{
+        required:true,
+        type:String
+    },
+    statusOfRequest:{
+        required:true,
+        type:String
+    },
+    ownerMobileNum:{
+        required:true,
+        type:String
+    },
+    loadType:{
+        required:true,
+        type:String
+    },
+    ownerPrice:{
+        required:true,
+        type:String
+    },
+    postedLoadId:{
+       required:true,
+       type:String
+    },
+    fromAddress:{
+        required:true,
+        type:String
+    },
+    toAddress:{
+        required:true,
+        type:String
+    }
+
+},{timestamps:true})
+const driverRequestToOwner=mongoose.model('driverRequestToOwner',drverRequests);
+module.exports=driverRequestToOwner;

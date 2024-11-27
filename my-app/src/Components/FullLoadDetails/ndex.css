@@ -1,0 +1,327 @@
+.load-full-details{
+    min-height: 100vh;
+}
+.load-full-detals-main-container{
+    background-image: url('https://s3-alpha-sig.figma.com/img/ade0/82c7/365370ff49d580050c86cb9a271520d0?Expires=1731888000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=RXpSmqltnE6zIkC1HU7VJMydsoNnKHgppkV7MfVJZNua1b67biOGab4fIGrHya-YIg~5GcJSCvXaWMZSRLbFi~0IZ-sgGDWX0pxBRJHzWjJmX1kOGJ8BOfoR7RmXX8v4ywvcxRg8vgxj3Fg9lujqzrG9hBkJijrSoGjyjHH8ZnYO9UVnP-i2fBm5w5y~Rz-LcuDkypG~3a6LqrfOB9An6XQnW0ekSmKq8z27dVKgmgxP109MPXvIzoiCYBdRSvza6kr0IulHpjgzoHhbgto-MLSRChGX2S0W3gmAw~JYUsLBivLkaxUoQWp878nQzL5670s1HyFhJmyzFx6PQbbGkw__');
+    width: 100%;
+    background-size: cover;
+    height: 550px;
+    padding: 250px 50px 50px 50px;
+}
+.load-full-details-mini-container{
+    border-radius: 46px;
+    background-color: #E3E3E3;
+    padding: 70px 70px 30px 60px;
+}
+.load-full-details-profile-image{
+    height: 150px;
+    width: 150px;
+    border-radius: 75px;
+    margin-right: 40px;
+}
+.load-full-details-mini-top-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+.load-full-details-owner-name-container{
+    align-items: center;
+
+}
+.load-full-details-owner-name{
+    font-family: 'Lato';
+    font-size: 30px;
+    font-weight: 400;
+    color: #0029FF;
+    margin-bottom: 15px;
+}
+.load-full-detals-name{
+    font-family: 'Lato';
+    font-size: 30px;
+    font-weight: 400;
+    color: #000000;
+}
+.load-full-details-date-container{
+    margin-left:auto;
+}
+.load-full-details-due{
+    font-family: 'Lato';
+    font-size: 30px;
+    font-weight: 400;
+    color: #FF0000;
+    margin-bottom: 10px;
+}
+.load-full-details-date{
+    font-family: 'Lato';
+    font-size: 18px;
+    color: #000000;
+    font-weight: 400;
+}
+.load-full-detals-bottom-container{
+    background-color: #ffffff;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 70px 30px 30px 50px;
+}
+.load-full-details-load-detail-styling{
+    font-family: 'Lato';
+    font-size: 20px;
+    font-weight: 400;
+    color: #000AFF;
+    margin-bottom: 0px;
+}
+.load-full-details-load-type{
+    font-family: 'Lato';
+    font-size: 25px;
+    font-weight: 400;
+    color: #FF0000;
+    margin-bottom: 15px;
+}
+.load-full-details-moble-number{
+    font-family: 'Lato';
+    font-size: 22px;
+    font-weight: 400;
+    color: #000000;
+}
+.load-full-details-weight-container{
+    margin-left: 50px;
+}
+.load-fuul-details-weight-name{
+    font-family: 'Lato';
+    font-size: 20px;
+    font-weight: 400;
+    color: #000000;
+    margin-bottom: 5px;
+}
+.load-full-details-wegiht{
+    font-family: 'Lato';
+    font-size: 23px;
+    font-weight: 400;
+    color: #FF0000;
+}
+.load-full-details-from-to-container{
+    margin-left: 50px;
+}
+.load-full-from-heading{
+    font-family: 'Lato';
+    font-size: 16px;
+    font-weight: 400;
+    color: #000000;
+    margin-left: 12px;
+    margin-bottom: 5px;
+}
+.load-full-details-from-container{
+    min-width: 200px;
+    height: 60px;
+    border-radius: 18px;
+    background-color: #DEDEDE;
+    padding: 20px 25px 8px 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.load-full-details-from-address{
+    font-family: 'Lato';
+    font-size: 14px;
+    font-weight: 400;
+    color: #000000;
+}
+.loads-full-details-location-icon{
+    width:9px;
+    height: 16px;
+    margin-top: -14px;
+}
+.load-dotted-line{
+    border-right: 2px dashed #000; /* Dashed line */
+    height: 50px; 
+    margin-right: 29px;
+    margin-top: -20px;
+    bottom: 20px;
+}
+.to-space{
+    bottom: 50px;
+}
+.load-full-details-price-container{
+    height: 90px;
+    width: 180px;
+    background-color: #FF0000;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+.full-load-details-price-name{
+    font-family: 'Lato';
+    font-size: 20px;
+    color: #000000;
+    font-weight: 400;
+    margin-left: 12px;
+    margin-bottom: 5px;
+    margin-top: 20px;
+}
+.load-full-details-price-space{
+    margin-left: 50px;
+}
+.load-full-details-price-style{
+    font-family: 'Lato';
+    font-size: 20px;
+    font-weight: 400;
+    color: #ffffff;
+    margin-top: 10px;
+}
+.rupees-symbol-styling{
+    color: #ffffff;
+    width:15px;
+    height: 20px;
+    margin-top: -1px;
+    margin-left: 8px;
+}
+.load-full-details-contact-button{
+    height: 90px;
+    width: 180px;
+    background-color: #027100;
+    border-width: 0px;
+    cursor: pointer;
+    font-family: 'Lato';
+    font-size: 20px;
+    font-weight: 400;
+    color: #ffffff;
+    margin: 50px 10px 10px 60px;
+    border-radius: 15px;
+}
+.load-full-details-loads-name{
+    font-family: 'Lato';
+    font-size: 30px;
+    color: #FF0000;
+    text-decoration: underline;
+    text-decoration-color: #000000;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+.loads-photo-styling{
+    height: 500px;
+    width: 100%;
+    margin-bottom: 50px;
+}
+.load-full-details-footer-container{
+    margin-right: -50px;
+    margin-left: -50px;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; /* Semi-transparent white */
+    backdrop-filter: blur(50px); /* Ensure blur is applied */
+    z-index: 5; /* Ensure it's above other elements */
+    opacity: 0.3;
+  }
+  .load-heading{
+    font-family: 'Lato';
+    font-size: 25px;
+    color: #FF0000;
+    font-weight: 400;
+    margin-bottom: 20px;
+  }
+  .popup-label-styling{
+    font-family: 'Lato';
+    font-size: 15px;
+    color: #000000;
+    font-weight: 400;
+    margin-left: 6px;
+  }
+  .popup-input-form-styling{
+    width:100%;
+    border-radius: 5px;
+    height: 40px;
+    outline: none;
+    padding: 8px 20px 5px 20px;
+    box-shadow: #DEDEDE 4px 4px 16px;
+    border-width: 0px;
+}
+.popup-each-field-container{
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+.popup-vehicle-photo-name{
+    font-family: 'Lato';
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+    color: #000000;
+    margin-top: 10px;
+}
+.pic-upload-main-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.pic-upload-container{
+    height: 50px;
+    width: 140px;
+    border-radius: 26px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 10px 5px 15px;
+    background-color: #e6dfdf;
+    box-shadow: #E3E3E3 4px 4px 16px;
+    cursor: pointer;
+    margin-bottom: 30px;
+}
+.upload-icon{
+    height: 20px;
+    width: 18px;
+    color: #000000;
+}
+.pic-upload-name-style{
+    font-family: 'Lato';
+    font-size: 16px;
+    font-weight: 500;
+    color: #000000;
+    margin-left: 15px;
+    margin-top: 15px;
+}
+input[type='file'] {
+    opacity: 0;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+}
+.cancel-button{
+    height:40px;
+    width: 90px;
+    background-color: #FF0000;
+    border-width: 0px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-family: 'Lato';
+    color: #ffffff;
+    margin-right: 20px;
+}
+.submit{
+    background-color: #027100;
+}
+.custom-alert {
+    position: fixed;          /* Position it fixed to stay in place */
+    top: 20%;                 /* Adjust the vertical position as needed */
+    left: 50%;                /* Center horizontally */
+    transform: translateX(-50%);
+    width: auto;              /* Set width based on content */
+    z-index: 1000;            /* Ensure it appears above other components */
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2); /* Optional shadow for focus */
+  }
+  

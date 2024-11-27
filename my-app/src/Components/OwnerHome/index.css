@@ -1,0 +1,166 @@
+.Home-bg-container{
+    background-image: url('https://s3-alpha-sig.figma.com/img/64d2/8e34/b25ebfc74a1bc0f9310f9ce0c29471ae?Expires=1731888000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Wx4Nr~BECJZWOigq2wTeMrxDtAHL1yGtLbW79J0ywIPDCvgDXkFlKoN7UjJOsD4edFMRRXFvqjhlFdPRmnwi64~at~RnYCDzQVWxtzMk3OhL7PImJOdY7wA-Y3T1GH7MIs~G~T-odfAuKl0raL8lPYsJs20Hfi4ETSSZ~z9TW2mcbWOKAOlUZOg91y5YgIWFy2yvN0QovxkswNw92IFy02kTt0VikMpWQlC6WYt4kQasDucYM~7lUXwoNJ6e-hqAw2YrCMynstNoEivMtJmmjnS~4Nu-aRejiE0tnsDPlUZL6A1dG~QRxgGIr88t47Q-Joh22MH4YIwdOivPD3cVhw__');
+    background-size: cover;
+    min-width: 100vh;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 40px;
+}
+.home-linking-style{
+    text-decoration: none;
+}
+.home-first-line-heading{
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    color: #ffffff;
+    font-size:23px;
+    margin-left: 60px;
+}
+.home-second-line-heading{
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    color: #ffffff;
+    font-size:70px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.home-buttons-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+.home-first-buton{
+    height: 40px;
+    width: 180px;
+    border-radius: 8px;
+    border-width: 0px;
+    background-color: #18AB00;
+    font-size: 15px;
+    color: #ffffff;
+    margin-right: 30px;
+}
+.home-second-buton{
+    height: 40px;
+    width: 140px;
+    border-radius: 8px;
+    border-width: 0px;
+    background-color: #18AB00;
+    font-size: 15px;
+    color: #ffffff;
+}
+@media(max-width:600px){
+    .Home-bg-container{
+        padding: 40px 40px 40px 20px;
+        min-width: 100%;
+        min-height: 100%;
+    }
+    .home-second-line-heading{
+        font-size: 30px;
+        margin-top: 0px;
+       margin-bottom: 10px;
+    }
+    .home-first-line-heading{
+        margin-left: 0px;
+        font-size: 18px;
+    }
+    .home-first-buton{
+        height:30px;
+        width:140px;
+        border-radius: 5px;
+        font-size: 14px;
+    }
+    .home-second-buton{
+        height:30px;
+        width:120px;
+        border-radius: 5px;
+        font-size: 14px;
+    }
+}
+.home-features-sections{
+    padding: 40px;
+}
+.home-features-heading{
+    font-family: 'Lato',sans-serif;
+    color: #000000;
+    font-size: 23px;
+    font-weight: 400;
+    text-decoration: underline;
+    text-decoration-color: #18AB00;
+    text-underline-offset: 6px;
+    margin-bottom: 20px;
+}
+.home-features-extra{
+    color: #0500FF;
+    font-size: 25px;
+}
+.home-features-description{
+    font-family: 'Lato',sans-serif;
+    font-size: 18;
+    font-weight: 400;
+    color: #000000;
+    margin-bottom: 30px;
+}
+.home-features-images-main-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.home-features-images-first-container{
+    height: 200px;
+    width: 400px;
+    background-color: #B0AFB1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.home-features-image-styling{
+    width:100px;
+    border-radius: 8px;
+}
+.home-feture-name{
+    font-family: 'Roboto';
+    font-size: 13px;
+    font-weight: 400;
+    color: #000000;
+    text-align: center;
+}
+.home-second-feature{
+    background-color: #ffffff;
+}
+.home-feature-image-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.home-feature-truck-image{
+    top: 50%; /* Move the image halfway down */
+    left: 50%;
+    margin-left: 200px;
+    transform: translate(-50%, -50%); /* Center the image both horizontally and vertically */
+    z-index: 1; /* Make sure the image stays on top */
+    width: 250px;
+  
+}
+.home-features-images-third-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: -23px;
+    margin-top: -155px;
+}
+@media(max-width:600px){
+.home-feature-truck-image{
+    width: 150px;
+    margin-top: 0px;
+    margin-left: 160px;
+}
+.home-features-images-third-container{
+    margin-top: -93px;
+}
+.home-features-image-styling{
+    width: 80px;
+}
+}

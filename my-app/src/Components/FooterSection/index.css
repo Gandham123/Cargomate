@@ -1,0 +1,90 @@
+.footer-bg-container{
+    background-color: #22262F;
+    padding: 15px 60px 15px 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    min-width: 100%;
+}
+.footer-first-container{
+    align-items: center;
+}
+.footer-app-name{
+    font-family: 'Roboto';
+    font-size: 25px;
+    font-weight: 100;
+    color: #ffffff;
+    margin-top: 20px;
+}
+.footer-transport-name{
+    font-family: 'Poppins',sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    opacity: 0.6;
+    color: #ffffff;
+    margin-top: 5px;
+}
+.footer-quick-link{
+    font-family: 'Playfair Display',sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+.footer-home-styling{
+    font-family: 'Montserrat',sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    margin-bottom: 1px;
+    color:#AFAFAF;
+    
+}
+.footer-socila-media-icons-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.footer-icon-container{
+    height: 30px;
+    width: 30px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    background-color: rgb(166, 184, 239);
+}
+.footer-icon-styling{
+    font-size: 12px;
+    font-weight: 400;
+    color: #000000;
+}
+.footer-address-heading{
+    font-family: 'Roboto';
+    font-size: 16px;
+    font-weight: 400;
+    color: #ffffff;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.footer-extra{
+    width: 150px;
+}
+@media(max-width:768px){
+    .footer-first-container{
+        display: none;
+    }
+    .footer-fourth-container{
+        display: none;
+    }
+    .footer-bg-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .footer-second-container{
+        margin-right: 40px;
+    }
+    
+}

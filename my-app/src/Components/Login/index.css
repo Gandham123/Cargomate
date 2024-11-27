@@ -1,0 +1,189 @@
+.login-bg-container {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-bg-container::before {
+    content: "";
+    background-image: url('https://s3-alpha-sig.figma.com/img/943a/973f/3d76a5972d1215cc89d2db1924234f31?Expires=1731888000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=XP6BbYHCqEfoOKwiJySAFEbxtmEBjxIhdvFI9iM4svLXKySN-illZIuT4q9DGcWIXFFhLtR7k2hogxlUIT7pK6k5HYASEgfphFXCGroQEgnsWk2DT6JF8J8LKW6IBb7jXieUZzBvHlQuExSxhl8osLpOD4wu6h4UqdFj2GbUMNjjYSETRx7y7vxNkRd-EUgamXpbYGQy-3vALrdl44tF1e9NEvJpEBAyKu2si0S8EzoV2kGxQpBF67Rr1PasgHftbQQpJ1Xo8lvBD6TujsLL6Vr8zoFxB4Yp6w65QcvSaK3I9BC~PnaGebNDiKYiL~902DXSNgc4V03JLDjNv5byGQ__');
+    background-size: cover;
+    opacity: 0.4;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Puts the background behind the content */
+}
+
+.login-main-container {
+    background-color: #ffffff;
+    border-radius: 20px;
+    padding: 30px;
+    position: relative;
+    z-index: 1; /* Ensures the content stays above the background */
+}
+
+.login-main-heading {
+    font-family: 'Lato', sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: 40px;
+}
+
+.login-main-heading-extra-style {
+    font-size: 50px;
+    color: #068203;
+}
+.login-signup-link{
+    text-decoration: none;
+}
+
+.login-border-styling{
+    border:1px solid #000000;
+    border-radius: 16px;
+    width:400px;
+    padding: 20px;
+    margin: 0 auto;
+    position: relative;
+    
+}
+.login-heading{
+    position: absolute;
+    top:-15px;
+    left:50%;
+    transform: translateX(-50%);
+    background-color: #ffffff;
+    padding: 0 10px;
+    font-size: 18px;
+    margin-top: 2px;
+    color:#000000;
+    font-family: 'Roboto';
+    font-weight: bold;
+}
+.login-label-styling{
+    font-family: 'Inter',sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #000000;
+    padding-left: 15px;
+}
+.login-input-field-styling{
+    width: 100%;
+    height: 50px;
+    padding: 5px 10px 5px 20px;
+    border:1px solid rgb(146, 141, 141);
+    border-radius: 23px;
+    outline: none;
+    margin-bottom: 20px;
+}
+.login-forgot-password-styling{
+    font-family: 'Inter',sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #0007AC;
+    padding-left: 15px;
+    margin-top: -10px;
+}
+.login-forgot-extra-style{
+    color: #000000;
+}
+.login-button-styling-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.login-button-styling{
+    height: 40px;
+    width: 120px;
+    background-color:#33a000;
+    border-width: 0px;
+    border-radius: 20px;
+    font-family: 'Inter',sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #ffffff;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-border-container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        position: relative;
+        margin: 20px 0;
+        margin-bottom: 20px;
+}
+.login-border-container::before, 
+.login-border-container::after{
+        content: '';
+        flex: 1;
+        border-bottom: 1px solid #000000; /* Change color as needed */
+        margin: 0 10px; /* Adds space around the text */
+    }
+.login-border-text{
+    font-family: 'Inter',sans-serif;
+    font-weight: 400;
+    color: #000000;
+    font-size: 15px;
+    padding: 0 10px;
+
+}
+.login-continue-google{
+    font-family: 'Inter',sans-serif;
+    font-weight: 400;
+    color: #000000;
+    font-size: 16px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.login-google-icon{
+    color: #ffffff;
+    font-size:10px;
+}
+.login-icon-container{
+    height: 20px;
+    width: 20px;
+    background-color: #ff0000;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-left: 6px;
+    margin-right: 6px;
+    
+}
+.login-signup-content{
+    font-family: 'Inter',sans-serif;
+    font-size: 16px;
+    color: #000000;
+    text-align: center;
+}
+.login-signup-name{
+    color: #4200ff;
+    cursor: pointer;
+}
+.login-spinning-styling{
+    padding-left: 30px;
+}
+@media(max-width:700px){
+    .login-bg-container{
+        padding: 30px;
+    }
+    .login-border-styling{
+        width: auto;
+    }
+}
