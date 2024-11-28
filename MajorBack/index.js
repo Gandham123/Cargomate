@@ -177,8 +177,8 @@ const transporter = nodemailer.createTransport({
     port: 587,
     secure: false, // true for port 465, false for other ports
     auth: {
-      user: "maheshpro1434@gmail.com",
-      pass: "ugut picp eway lvkt",
+      user: "example@gmail.com",
+      pass: "***********",
     },
     logger: true,
     logLevel: 'info'
@@ -190,7 +190,7 @@ app.post('/driverrequest',verify,async(request,response)=>{
         const tomailAddress=userDetailsFromDB[0].mail;
         console.log(tomailAddress);
         const info= await transporter.sendMail({
-            from:"CARGOMATE <maheshpro1434@gmail.com>",
+            from:"CARGOMATE gmail.com>",
             to:tomailAddress,
             subject:"Driver Sended Request to Your Load",
             html:`
@@ -263,7 +263,7 @@ app.put('/driverrequests/:id',verify,async(request,response)=>{
     }
     if(status_update==="Rejected"){
         const info= await transporter.sendMail({
-            from:"CARGOMATE <maheshpro1434@gmail.com>",
+            from:"frommil@gmail.com>",
             to:driverEmailAddress,
             subject:"Update on Your Transport Request",
             html:`
@@ -343,7 +343,7 @@ app.get('/trucks/:id',verify,async(request,response)=>{
 }) 
 
 //mongoose.connect("mongodb+srv://satyabhaskargandham:Satya%40123@major.kd4cw.mongodb.net/User-details?retryWrites=true&w=majority&appName=major")
-mongoose.connect("mongodb+srv://satyabhaskargandham:Satya%40123@major.kd4cw.mongodb.net/?retryWrites=true&w=majority&appName=major")
+mongoose.connect("Mongodb server connection string")
 .then(()=>{
     console.log('connected to database!..')
     app.listen(4000,()=>(console.log("Server is Running ....")))
