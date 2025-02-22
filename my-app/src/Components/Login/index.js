@@ -6,14 +6,19 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGooglePlusG } from '@fortawesome/free-brands-svg-icons';
 import {Link} from 'react-router-dom';
 import { ThreeDots } from 'react-loader-spinner';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import ContextEl from '../../Context';
+
 class LoginEl extends Component{
-    state={username:'',password:'',inProgress:false}
+    state={username:'',password:'',inProgress:false,typeOfPassword:"password"}
     userName=(event)=>{
         this.setState({username:event.target.value})
     }
     userPassword=(event)=>{
         this.setState({password:event.target.value})
+    }
+    checkBoxHandeling=()=>{
+        this.setState((prevState)=>({typeOfPassword:prevState.typeOfPassword==="password"?"text":"password"}))
     }
     submittingDetails=async (event)=>{
         event.preventDefault();
@@ -60,7 +65,7 @@ class LoginEl extends Component{
         return(
             <>
             <ContextEl.Provider value={{userName:username}}>
-            <div className='login-bg-container'>
+            <div className='login-bg-container' style={{backgroundImage:`url(${process.env.PUBLIC_URL}/bhaskar.jpg)`}}>
                 
                 <div className='login-main-container'>
                   <h1 className='login-main-heading'>Welcome to <br/> <span className='login-main-heading-extra-style'>CARGOMATE</span></h1>
@@ -70,8 +75,12 @@ class LoginEl extends Component{
                         <label className='login-label-styling'>User name</label>
                         <input type='text' className='login-input-field-styling' onChange={this.userName} placeholder='Enter Your User Name' value={username}/>
                         <label className='login-label-styling'>Password</label>
-                        <input type='text' className='login-input-field-styling' onChange={this.userPassword} placeholder='Enter Your Password' value={password}/>
-                        <p className='login-forgot-password-styling'>Forgot <span className='login-forgot-extra-style'>your password....?</span> </p>
+                        <input type={this.state.typeOfPassword} className='login-input-field-styling' onChange={this.userPassword} placeholder='Enter Your Password' value={password}/>
+                        <div className="login-input-name-chex-container mb-4">
+                                <input type="checkbox" className="input-chexbox-styling" onChange={this.checkBoxHandeling}/>
+                                <label className="chex-box-label-styling">ShowPassword</label>
+                        </div>
+                        
                     </form>
                   </div>
                   <div className='login-button-styling-container'>

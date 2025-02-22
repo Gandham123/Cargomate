@@ -129,8 +129,8 @@ class AvailbleTrucksEl extends Component{
         //console.log(driverPostsList)
         return(
             <>
-            <OwnerHeaderEl/>
-            <div className='loads-top-container'>
+            <OwnerHeaderEl/> 
+            <div className='loads-top-container' style={{backgroundImage:`url(${process.env.PUBLIC_URL}/box.png)`}}>
          <div className='loads-welcome-container'>
             <h1 className='loads-welcome-styling'>Welcome to <span className='loads-welcome-heading-extra-styling'>Cargomate</span></h1>
             <p className='loads-heading-para'>We invite you to share the details of your loads to help connect with the right transporters for smooth and timely delivery</p>

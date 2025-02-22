@@ -12,6 +12,7 @@ import Button from '@mui/material/Button';
 import Modal from '@mui/material/Modal';
 import Alert from '@mui/material/Alert';
 import Stack from '@mui/material/Stack';
+import { ThreeDots } from 'react-loader-spinner';
 const style = {
   position: 'absolute',
   top:'50%',
@@ -50,7 +51,7 @@ const buttonStyle = {
 
 class FullLoadDetalsEl extends Component{
   state={loadsDetails:{},open: false,mobileNumber:'',driverMailId:'',
-  vehicleNumber:'',price:'',showAlert: false,}
+  vehicleNumber:'',price:'',showAlert: false,submitProgress:false}
   componentDidMount(){
     this.getLoadDetails()
   }
@@ -76,6 +77,7 @@ class FullLoadDetalsEl extends Component{
   //vehicleImageUploading = this.vehicleImageUploading.bind(this);
   
   handleSubmit = async() => {
+    this.setState({submitProgress:true})
     const token=Cookies.get('token');
     const loacallyStoredObject=JSON.parse(localStorage.getItem('userName'));
     const driverName=loacallyStoredObject.name;
@@ -105,7 +107,7 @@ class FullLoadDetalsEl extends Component{
     }
     const response= await fetch("http://localhost:4000/driverrequest",options)
     if(response.ok===true){
-      this.setState({ showAlert: true , open: false});
+      this.setState({ showAlert: true , open: false,submitProgress:false});
       setTimeout(() => {
         this.setState({ showAlert: false });
       }, 6000);
@@ -138,8 +140,8 @@ class FullLoadDetalsEl extends Component{
       const{name,loadDate,unloadDate,mobileNumber,from,to,price,typeofLoad,weight,ownerImage}=loadsDetails
         return(
             <div className='load-full-details'> 
-            <HeaderEl/>
-            <div className={`load-full-detals-main-container ${applyOr}`}>
+            <HeaderEl/> 
+            <div className={`load-full-detals-main-container ${applyOr}`} style={{backgroundImage:`url(${process.env.PUBLIC_URL}/box.png)`}}>
             {this.state.showAlert && (
           <Stack className="custom-alert" spacing={2}>
             <Alert severity="success">Your Details Submitted Succefully.</Alert>
@@ -221,7 +223,7 @@ class FullLoadDetalsEl extends Component{
            </div>
            <div className='pic-upload-main-container'>
             <button className='cancel-button' onClick={this.handleClose}>Cancel</button>
-            <button className='cancel-button submit' onClick={this.handleSubmit}>Submit</button>
+            <button className='btn btn-success' type='button' onClick={this.handleSubmit}>{this.state.submitProgress?<ThreeDots color='#ffffff' height={30} width={30}/>:"Submit"}</button>
            </div>
           </Box>
         </Modal>
@@ -230,7 +232,7 @@ class FullLoadDetalsEl extends Component{
         </div>
              <div className='mb-2'>
              <p className='load-full-details-loads-name'>Load Photos</p>
-             <img src='https://s3-alpha-sig.figma.com/img/2b19/59fa/b1e03e33bd5f6af428261c8b629900b7?Expires=1731888000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=D6WLkKu51kE-ePPaDYFQjVye9miXXMwC1O~o7iVgpDP7NPfX3zKDpdqhOVqMXNbX3WjRqoNC0Et9l-e-qyd9BrOQAlQLBAK00MFhjI4jnFeWHN-G4sC5qh6kq2CUqikkZRY3Pv4pXtcENdVNBo7hRchqleS31rV42uIVRmaxY6r1yKk-1eqXyp1sT8DOkLa25qzIs5bZ2YqJqawBSI3o~BFOWalJhfNwaEj9qq3OGSgOhgLw7ct2FLZn5HX3PlbseQnPMyNRjeyOxYUaaZTNfzFI6AcurC6SUz7L7UtizGRfNOXW9ldYTtyN85oDsAdJWjvu8qMpMMCF3cEV6WbYxw__' alt='goods' className='loads-photo-styling'/>
+             <img src='loadspic.png' alt='goods' className='loads-photo-styling'/>
              </div>
              <div className='load-full-details-footer-container'>
               <FooterEl/>

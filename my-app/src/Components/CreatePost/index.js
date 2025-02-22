@@ -131,9 +131,9 @@ class CreatePostEl extends Component{
         return(
             <>
             <HeaderEl/>
-            <div className='create-post-main-container'>
+            <div className='create-post-main-container' style={{backgroundImage:`url(${process.env.PUBLIC_URL}/box.png)`}}>
                <div className={`create-post-container ${styleApply}`}>
-                <img src='https://s3-alpha-sig.figma.com/img/2559/76a9/edccfa26a962859bdc2e578a0d87fa83?Expires=1732492800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=lEO4113f6oamzMktbD96Wq-0QT8SNZWe1fA5~acPPXT~guVWzkrIbVijFlN2iwnafjiqfj67aR39xL31d9z2xpV4Nmbtx8SSi6yR5I-o1Uhl-gSiWlEoRoDfBl8zklL5HuDFjrqw7KNDlwy6euq4o-0FKuhvQBSNm27yTsM0nrKhPqRpD3aC9q9BKJB-FpYf-G0P4d0j2n2F6s-QvD26Csiv4Iy0rG2IuVJdLgo44ItMcj~a~QQtwA~MvL5OZyJEdDHaciOFr0qf58ESMC-r3ryDvC4VOWB5IqoUevDumfspRv2SKaAGaFVPqOONxHo9nOI6mayEhsZIqzcEzPeYMg__' alt='truck' className='create-post-image-styling'/>
+                <img src='create.png' alt='truck' className='create-post-image-styling'/>
                 <div className='create-post-form-contaienr'>
                     <div className='create-post-form-first-line'>
                         <div className='create-post-driver-name-container'>
@@ -199,7 +199,7 @@ class CreatePostEl extends Component{
                         <FontAwesomeIcon icon={faCircleXmark}  className='popup-icon-styling' onClick={this.handleClose}/>
                         </div>
                         <div className='popup-container'>
-                           <img src='https://s3-alpha-sig.figma.com/img/07fd/e636/760a8a9514a5f7faa2bb485ba6c12625?Expires=1732492800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=ihlZTtUHNFaoOrpIhaA3Uo-gkIgP53iODFzY0JynN2qqhhRbcaWHsH30COnvZauofOjTF99h8LZD6vekx8T6DEnywF1j1Fs8IZ7ys8bQ5iyBFydhKRKf41rM3728uo6DdBZBGGyVKRfFXQH06Hpp~S01IHxoUIvAWWVlioqRVzx5nKArj~v1rtgLsdbYET7tIY3By0HAaK4WiSfPYb9lZeV~VEiMAJiLZv3eVpVDbgv0yo2cDIg1ucY5Na5NmmuHq-3D1SBvwdawjjmKdYxxPlQsH8dusG0NJ0nK2VrA2WaxHO9DIqoa3ORJ9eadE2DsgQLltMfqPs5tQpJiAkLBfw__' className='image-styling' alt='image'/>
+                           <img src='tipper.png' className='image-styling' alt='image'/>
                            <p className='thanks'>Thank for contacting</p>
                            <h1 className='cragomate'>CARGOMATE</h1>
                         </div>

@@ -146,7 +146,7 @@ class ProfileEl extends Component{
         return(
         <>
         <HeaderEl/>
-        <div className='profile-main-container'>
+        <div className='profile-main-main-container' style={{backgroundImage:`url(${process.env.PUBLIC_URL}/box.png)`}}> 
             <div className='profile-mini-container'>
                 <div className='profile-top-container'>
                     <div className='profile-image-name-container'>

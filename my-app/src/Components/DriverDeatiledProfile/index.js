@@ -58,7 +58,7 @@ class DriverDetails extends Component{
         return(
             <>
             <OwnerHeaderEl/>
-            <div className='profile-main-container'>
+            <div className='profile-main-container' style={{backgroundImage:`url(${process.env.PUBLIC_URL}/box.png)`}}>
             <div className='profile-mini-container'>
                 <div className='profile-top-container'>
                     <div className='profile-image-name-container'>
@@ -68,10 +68,7 @@ class DriverDetails extends Component{
                             <p className='profile-mobile-number'>{mobile_number}</p>
                         </div>
                     </div>
-                    <div className='profile-edit-container'>
-                        <FontAwesomeIcon icon={faPen} className='profile-edit-icon' />
-                        <p className='profle-edit'>Edit</p>
-                    </div>
+                    
                     <div className='profile-right-container'>
                         <h1 className='profile-Truck-Details'>Truck Details</h1>
                         <p className='profile-vehicle-type'>Vehicle Type: {truck_type}</p>

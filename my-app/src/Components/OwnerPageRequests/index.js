@@ -66,7 +66,7 @@ class OwnerPageRequesteEl extends Component{
         return(
             <>
              <OwnerHeaderEl/>
-             <div className="Owner-request-sttaus-main-container">
+             <div className="Owner-request-sttaus-main-container" style={{backgroundImage:`url(${process.env.PUBLIC_URL}/box.png)`}}>
             <div className='Owner-requests-mini-container'>
                 <h1 className='Owner-requests-heading'>Requests</h1>
                 <hr className='Owner-requests-line'/>

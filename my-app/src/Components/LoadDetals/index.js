@@ -10,7 +10,7 @@ const LoadDetails=(props)=>{
     }
     return(
         <>
-         <div className='load-details-contaner'>
+         <div className='load-details-contaner' >
                <div>
                   <h1 className='loads-owner-name'>Owner Name</h1>
                   <p className='loads-name'>{name}</p>

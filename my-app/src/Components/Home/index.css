@@ -1,12 +1,12 @@
 .Home-bg-container{
-    background-image: url('https://s3-alpha-sig.figma.com/img/64d2/8e34/b25ebfc74a1bc0f9310f9ce0c29471ae?Expires=1731888000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Wx4Nr~BECJZWOigq2wTeMrxDtAHL1yGtLbW79J0ywIPDCvgDXkFlKoN7UjJOsD4edFMRRXFvqjhlFdPRmnwi64~at~RnYCDzQVWxtzMk3OhL7PImJOdY7wA-Y3T1GH7MIs~G~T-odfAuKl0raL8lPYsJs20Hfi4ETSSZ~z9TW2mcbWOKAOlUZOg91y5YgIWFy2yvN0QovxkswNw92IFy02kTt0VikMpWQlC6WYt4kQasDucYM~7lUXwoNJ6e-hqAw2YrCMynstNoEivMtJmmjnS~4Nu-aRejiE0tnsDPlUZL6A1dG~QRxgGIr88t47Q-Joh22MH4YIwdOivPD3cVhw__');
+    
     background-size: cover;
     min-width: 100vh;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    padding: 40px;
+    padding: 40px; 
 }
 .home-linking-style{
     text-decoration: none;

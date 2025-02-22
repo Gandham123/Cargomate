@@ -180,9 +180,9 @@ class RegisterEl extends Component{
        }
         return(
             <>
-             <div className='register-main-bg-container'>
+             <div className='register-main-bg-container' style={{backgroundImage:`url(${process.env.PUBLIC_URL}/bhaskar.jpg)`,backgroundSize:'cover'}}>
              {ThankuCardDisplayOrNOt}
-             </div>
+             </div> 
             </>
         )
     }

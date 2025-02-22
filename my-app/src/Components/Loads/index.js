@@ -118,8 +118,8 @@ class LoadsEl extends Component{
    }
    return(
       <>
-      <HeaderEl/>
-      <div className='loads-top-container'>
+      <HeaderEl/> 
+      <div className='loads-top-container' style={{backgroundImage:`url(${process.env.PUBLIC_URL}/box.png)`}}>
          <div className='loads-welcome-container'>
             <h1 className='loads-welcome-styling'>Welcome to <span className='loads-welcome-heading-extra-styling'>Cargomate</span></h1>
             <p className='loads-heading-para'>Quickly find loads near you and keep your trips running smoothly with CargoMate</p>

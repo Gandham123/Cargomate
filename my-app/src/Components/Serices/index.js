@@ -74,8 +74,8 @@ class ServicesEl extends Component{
         </div>
     return(
         <>
-        <HeaderEl/>
-        <div className="driver-request-sttaus-main-container">
+        <HeaderEl/> 
+        <div className="driver-request-sttaus-main-container" style={{backgroundImage:`url(${process.env.PUBLIC_URL}/box.png)`,backgroundRepeat:'repeat-y',backgroundSize:'cover'}}>
             <div className='driver-requests-mini-container'>
                 <h1 className='driver-requests-heading'>Requests</h1>
                 <hr className='driver-requests-line'/>

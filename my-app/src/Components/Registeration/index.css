@@ -8,7 +8,7 @@
 }
 .register-main-bg-container::before{
     content: "";
-    background-image: url('https://s3-alpha-sig.figma.com/img/943a/973f/3d76a5972d1215cc89d2db1924234f31?Expires=1731888000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=XP6BbYHCqEfoOKwiJySAFEbxtmEBjxIhdvFI9iM4svLXKySN-illZIuT4q9DGcWIXFFhLtR7k2hogxlUIT7pK6k5HYASEgfphFXCGroQEgnsWk2DT6JF8J8LKW6IBb7jXieUZzBvHlQuExSxhl8osLpOD4wu6h4UqdFj2GbUMNjjYSETRx7y7vxNkRd-EUgamXpbYGQy-3vALrdl44tF1e9NEvJpEBAyKu2si0S8EzoV2kGxQpBF67Rr1PasgHftbQQpJ1Xo8lvBD6TujsLL6Vr8zoFxB4Yp6w65QcvSaK3I9BC~PnaGebNDiKYiL~902DXSNgc4V03JLDjNv5byGQ__');
+
     background-size: cover;
     opacity: 0.4;
     position: absolute;
