@@ -95,29 +95,27 @@ app.post('/load', verify, async (request, response) => {
         response.status(500).send({ message: error.message });
     }
 });
-app.get('/load',verify,async(request,response)=>{
-    const {fromAddress,toAddress,date}=request.query;
+app.get('/load', verify, async (request, response) => {
+    const { fromAddress, toAddress, date } = request.query;
     const query = {};
 
-    // Add conditions only if the parameters are provided
-    if (fromAddress.length!==0) {
-        query.from = fromAddress;
+    if (fromAddress && fromAddress.trim().length !== 0) {
+        query.from = { $regex: fromAddress.trim(), $options: 'i' }; // Case-insensitive & partial match
     }
-    if (toAddress.length!==0) {
-        query.to = toAddress;
+    if (toAddress && toAddress.trim().length !== 0) {
+        query.to = { $regex: toAddress.trim(), $options: 'i' }; // Case-insensitive & partial match
     }
-    if (date.length!==0) {
-        query.loadDate = date;
+    if (date && date.trim().length !== 0) {
+        query.loadDate = date.trim();
     }
-    try{
-        const fetchedDetals=await loads.find(query);
-        response.status(200).json({fetchedDetals})
-    }
-    catch (error) {
+
+    try {
+        const fetchedDetails = await loads.find(query);
+        response.status(200).json({ fetchedDetails });
+    } catch (error) {
         response.status(500).send({ message: error.message });
     }
-    
-})
+});
 app.get('/loaddetails/:id',verify,async(request,response)=>{
     const{id}=request.params;
     try{

@@ -37,7 +37,7 @@ class LoadsEl extends Component{
       const response=await fetch(url,option);
       if(response.ok===true){
          const data=await response.json();
-         this.setState({loadDetailsList:data.fetchedDetals,apiStatus:apiStatusList.success})
+         this.setState({loadDetailsList:data.fetchedDetails,apiStatus:apiStatusList.success})
       }
       else{
          this.setState({apiStatus:apiStatusList.failure})
@@ -61,6 +61,7 @@ class LoadsEl extends Component{
    }
    successView=()=>{
       const{loadDetailsList}=this.state;
+      console.log(loadDetailsList);
       let finalSuccessrender=null;
       if(loadDetailsList.length===0){
          finalSuccessrender=<div className='loads-not-found'>

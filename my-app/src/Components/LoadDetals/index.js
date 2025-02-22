@@ -1,3 +1,4 @@
+//each load details in the load page will be displayed
 import './index.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLocationDot } from '@fortawesome/free-solid-svg-icons'; // Import the solid icon
