@@ -341,7 +341,7 @@ app.get('/trucks/:id',verify,async(request,response)=>{
 }) 
 
 //mongoose.connect("mongodb+srv://satyabhaskargandham:Satya%40123@major.kd4cw.mongodb.net/User-details?retryWrites=true&w=majority&appName=major")
-mongoose.connect("Mongodb server connection string")
+mongoose.connect("mongodb+srv://satyabhaskargandham:Satya%40123@major.kd4cw.mongodb.net/?retryWrites=true&w=majority&appName=major")
 .then(()=>{
     console.log('connected to database!..')
     app.listen(4000,()=>(console.log("Server is Running ....")))
